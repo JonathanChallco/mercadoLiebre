@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <header>
+        <div>
+            <!--Logo-->
+            <img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
+            <!--Buscador-->
+            <input type="text" placeholder="Buscar..."> 
+            <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+    </header>
+    <main>
+        <div>
+            <section>
+                <h1>Registro de Usuario</h1>
+                <form action="/home.html" method="POST">
+                    <label for="nombre-apellido">Nombre y Apellido:</label>
+                    <input type="text" id="nombre-apellido" name="nombre-apellido" required><br>
+                    <label for="nombre-usuario">Nombre de Usuari@:</label>
+                    <input type="text" id="nombre-usuario" name="nombre-usuario" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br>
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" id="domicilio" name="domicilio" required><br>
+                    <label>Perfil del Usuario:</label><br>
+                    <input type="radio" id="comprar" name="perfil" value="comprar">
+                    <label for="comprar">Comprar</label><br>
+                    <input type="radio" id="vender" name="perfil" value="vender">
+                    <label for="vender">Vender</label><br>
+                    <input type="radio" id="ambos" name="perfil" value="ambos">
+                    <label for="ambos">Ambos</label><br>
+                    <label>Categorías de Interés:</label><br>
+                    <input type="checkbox" id="electro" name="interes" value="Electro">
+                    <label for="electro">Electro</label><br>
+                    <input type="checkbox" id="moda" name="interes" value="Moda">
+                    <label for="moda">Moda</label><br>
+                    <input type="checkbox" id="hogar" name="interes" value="Hogar">
+                    <label for="hogar">Hogar</label><br>
+                    <input type="checkbox" id="jugueteria" name="interes" value="Juguetería">
+                    <label for="jugueteria">Juguetería</label><br>
+                    <input type="checkbox" id="vida-sana" name="interes" value="Vida Sana">
+                    <label for="vida-sana">Vida Sana</label><br>
+                    <label for="foto">Foto de Usuario:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*"><br>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required><br>
+                    <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                    <br>
+                    <a href="/home.html">Volver a pagina Principal</a>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <section>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </section>
+            <section>
+                <h2>Copyright © 1999-2020 MercadoLiebre S.R.L.</h2>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
