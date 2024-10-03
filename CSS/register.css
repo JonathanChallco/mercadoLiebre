@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Roboto,sans-serif;
+    font-size: 12px;
+}
+main{
+    background-color: #ebebeb;
+    padding-top: 0.5px;
+}
+section{
+    margin-top: 10px;
+}
+.form-container form input{
+    height: 20px;
+    padding-right: 140px;
+    margin: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.encabezado-form {
+    /* border: 2px solid black; */
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.profile-conteiner{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.encabezado-profile{
+    font-weight: bold;
+    font-size: 15px;
+}
+.send{
+    background-color:#1259c3;
+    color: white;
+    padding: 10px 140px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

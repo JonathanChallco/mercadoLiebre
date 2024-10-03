@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Roboto,sans-serif;
+    font-size: 12px;
+}
+main {
+    background-color: #ebebeb;
+}
+/* Ultima Visita - Oferta */
+main section h2{
+    text-align: center;
+    font-size: 24px;
+}
+/* Precio */
+.price {
+    text-align: center;
+    font-size: 18px;
+}
+/* Desccuento */
+.price span{
+    text-align: center;
+    font-size: 16px;
+}
+/* Descripciones */
+main section article h3{
+    text-align: center;
+    font-size: 16px;
+}
+/*Imagenes*/
+.image{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
