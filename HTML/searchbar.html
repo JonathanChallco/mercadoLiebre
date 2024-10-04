@@ -5,20 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
     <link rel="stylesheet" href="/CSS/header.css">
-    <link rel="stylesheet" href="/CSS/main.css">
     <link rel="stylesheet" href="/CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!--Enlace a iconos-->
 
 </head>
 <body>
     <header>
-        <div>
-            <!--Logo-->
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
-            <!--Buscador-->
-            <h1>Buscador</h1>
-        </div>
-        <a href="/HTML/home.html">Volver a pagina Principal</a>
+        <a href="/HTML/home.html"><!--Logo-->
+            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
+        </a>
+        <!--Buscador-->
+        <form action="/HTML/searchbar.html" method="get">
+            <input type="text" placeholder="Buscar productos, marcas" name="buscar">
+            <br>
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        <p class="credit"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <nav class="navbar">
+            <ul class="ul1" >
+                <li>
+                    <a href="">Ofertas</a>
+                </li>
+                <li>
+                    <a href="">Tiendas Oficiales</a>
+                </li>
+                <li>
+                    <a href="">Vender</a>
+                </li>
+                <li>
+                    <a href="">Ayuda</a>
+                </li>
+            </ul>
+            <ul class="ul2" >
+                <li>
+                    <a href="/HTML/register.html">Creá tu cuenta</a>
+                    <i class="fa-solid fa-address-card"></i>
+                </li>
+                <li>
+                    <a href="/HTML/login.html" >Ingresá</a>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </li>
+                <li>
+                    <a href="">Mis compras</a>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <section class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </section>
+        <br>
     </header>
     <main>
         <div>
