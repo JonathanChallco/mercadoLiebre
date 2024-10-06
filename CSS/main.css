@@ -22,6 +22,7 @@ main{
     padding-top:5px;
     padding-bottom:5px;
     text-align: left;
+    box-shadow: 0xp 0px 10px rgb(20, 0, 0);
 
     /*Imagenes*/    
     .image{
@@ -63,5 +64,21 @@ main{
             font-size: 16px;
             font-weight: 400;
         }
+    }
+} 
+/* TAble*/
+@media(min-width:768px){
+    main{
+        background: red;
+
+        /* .product-description {
+            box-shadow: 0xp 0px 10px rgb(100, 100, 100);
+        } */
+    }
+}
+/*Desktop*/
+@media (min-width:1024px){
+    main{
+        background-color: blue;
     }
 }
