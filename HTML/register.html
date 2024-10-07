@@ -11,20 +11,25 @@
 </head>
 <body>
     <header>
-        <a href="/HTML/home.html"><!--Logo-->
-            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
-        </a>
-        <!--Buscador-->
-        <form action="/HTML/searchbar.html" method="get">
-            <input type="text" placeholder="Buscar productos, marcas" name="buscar">
-            <br>
-            <button type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-        <p class="credit"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <div class="logo-search">
+            <a href="/HTML/home.html"><!--Logo-->
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
+            </a>
+            <!--Buscador-->
+            <form action="/HTML/searchbar.html" method="get">
+                <input type="text" placeholder="Buscar productos, marcas" name="buscar">
+                <br>
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <p class="credit">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+        </p>
         <nav class="navbar">
-            <ul class="ul1" >
+            <ul class="categories" >
                 <li>
                     <a href="">Ofertas</a>
                 </li>
@@ -38,7 +43,7 @@
                     <a href="">Ayuda</a>
                 </li>
             </ul>
-            <ul class="ul2" >
+            <ul class="categories" >
                 <li>
                     <a href="/HTML/register.html">Creá tu cuenta</a>
                     <i class="fa-solid fa-address-card"></i>
@@ -52,12 +57,12 @@
                     <i class="fa-solid fa-bag-shopping"></i>
                 </li>
             </ul>
+            <div class="caja-burger">
+                <section class="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </section>
+            </div>
         </nav>
-        <br>
-        <section class="burger-menu">
-            <i class="fa-solid fa-bars"></i>
-        </section>
-        <br>
     </header>
     <main>
         <!-- <h1>Registro de Usuario</h1> -->

@@ -10,38 +10,69 @@ header{
     padding: 10px 10px 0 10px;
     text-align: left;
 }
-/* Logo */
-.logo{
-    width: 120px;
-    padding: 15px;
+.logo-search{
+    /* Logo */
+    .logo{
+        width: 120px;
+        padding: 15px;
+    }
 }
+
 /* Credito y cuotas */
 .credit{
     text-align: center;
     font-weight: 400px;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
 }
-/* navbar */
-.navbar  ul{
-    list-style: none;
-    padding: 10px;
+/* secciones de nap-var */
+.navbar {
+    padding: 10px 0;
+    /*UL*/
+    ul{
+        list-style: none;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* Ul1 y ul2 */
+    }
+    /* caja de Burger */
+    .caja-burger{
+        padding:10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* burger */
+        .burger-menu{
+            padding:0;
+            border: 1px solid blue;
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+            /* Icono de burger */
+            i{
+                color: white;
+                font-size: 1.5em;
+            }
+        }
+    }
 }
-/* Burger menu */
-.burger-menu {
-    display: grid;/*defino la celda*/
-    place-items: center;
-    margin: 0 auto;
-    border: 2px solid blue;
-    border-radius: 20%;
-    width: 30px;
-    height: 30px;
-    background-color:#1259c3;
-    color: white;
+/*mobile*/
+@media(max-width:768px){
+    .categories{
+        display: none;
+    }
 }
-.burger-menu i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
+/* TAble*/
+@media(min-width:768px){
+    .navbar .caja-burger{
+        display: none;
+    }
 }
-
+/*Desktop*/
+@media (min-width:1024px){
+    /* nada que poner */
+}
