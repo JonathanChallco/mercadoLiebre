@@ -11,25 +11,26 @@
 </head>
 <body>
     <header>
-        <div class="logo-search">
-            <a href="/HTML/home.html"><!--Logo-->
-                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
-            </a>
-            <!--Buscador-->
-            <form action="/HTML/searchbar.html" method="get">
-                <input type="text" placeholder="Buscar productos, marcas" name="buscar">
-                <br>
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
+        <div class="logo-search-credit">
+            <!-- <div class="logo-search"> -->
+                <a href="/HTML/home.html"><!--Logo-->
+                    <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
+                </a>
+                <!--Buscador-->
+                <form class="search" action="/HTML/searchbar.html" method="get">
+                    <input type="text" placeholder="Buscar productos, marcas" name="buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <p class="credit">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </p>
+            <!-- </div> -->
         </div>
-        <p class="credit">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            Comprá en cuotas y sin tarjeta de crédito
-        </p>
         <nav class="navbar">
-            <ul class="categories" >
+            <ul class="categories-one" >
                 <li>
                     <a href="">Ofertas</a>
                 </li>
@@ -43,7 +44,7 @@
                     <a href="">Ayuda</a>
                 </li>
             </ul>
-            <ul class="categories" >
+            <ul class="categories-two" >
                 <li>
                     <a href="/HTML/register.html">Creá tu cuenta</a>
                     <i class="fa-solid fa-address-card"></i>
@@ -66,8 +67,8 @@
     </header>
     <main>
         <!-- Ultima visita -->
-        <section>
-            <h2 class="titulares">Basado en tu última visita</h2>
+        <h2 class="titulares">Basado en tu última visita</h2>
+        <section class="recuadroTitulares">
             <article class="products">
                 <img class="image" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
                 <div class="product-description">
@@ -79,7 +80,6 @@
                     <h3>Cafetera Moulinex</h3>
                 </div>
             </article>
-    
             <article class="products">
                 <img class="image" src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
                 <div class="product-description">
@@ -91,7 +91,6 @@
                     <h3>MacBook Pro 2019</h3>
                 </div>
             </article>
-    
             <article class="products">
                 <img class="image" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
                 <div class="product-description">
@@ -103,7 +102,6 @@
                     <h3>Samsung Galaxy S10</h3>
                 </div>
             </article>
-    
             <article class="products">
                 <img class="image" src="/images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung 43">
                 <div class="product-description">
@@ -116,10 +114,9 @@
                 </div>
             </article>
         </section>
-
         <!--Ofertas-->
-        <section>
-            <h2 class="titulares" >Ofertas</h2>
+        <h2 class="titulares" >Ofertas</h2>
+        <section class="recuadroTitulares">
             <article class="products">
                 <img class="image" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
                 <div class="product-description">
@@ -131,7 +128,6 @@
                     <h3>Cafetera Moulinex</h3>
                 </div>
             </article>
-    
             <article class="products">
                 <img class="image" src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
                 <div class="product-description">
@@ -143,7 +139,6 @@
                     <h3>MacBook Pro 2019</h3>
                 </div>
             </article>
-    
             <article class="products">
                 <img class="image" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
                 <div class="product-description">
@@ -155,7 +150,6 @@
                     <h3>Samsung Galaxy S10</h3>
                 </div>
             </article>
-    
             <article class="products">
                 <img class="image" src="/images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung 43">
                 <div class="product-description">
