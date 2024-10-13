@@ -1,80 +1,110 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
 *{
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     font-size: 12px;
 }
+
 main{
     margin: 0;
     padding: 10px 10px;
     background-color: #ebebeb;
-    text-align: center;
+}
+/* Home-Banner(Div) */
+.home-banner{
+    margin:-10px;
+    .banner{
+        width: 100%;
+    }
 }
 /* Ultima Visita - Oferta */
 .titulares{
     font-size: 24px;
     text-align: left;
-    padding-top:5px;
-    padding-bottom:5px;
+    margin: 20px;
 }
 /*Caja de productos*/
-.products {
-    padding-top:5px;
-    padding-bottom:5px;
-    text-align: left;
-    /* box-shadow: 0xp 0px 10px rgb(20, 0, 0); */
-
-    /*Imagenes*/    
-    .image{
-        width: 100%;
-    }
-
-    /* Descripcion de producto */
-    .product-description{
-        background-color: white;
-        padding: 15px;
-        border-top: 1px solid #ebebeb;
-        /* icono */
-        i {
-            color:#39b54a;
-            border: 1px solid#39b54a;
-            border-radius: 50px;
-            padding: 5px;
+.recuadroTitulares{
+    .products {
+        padding-top:5px;
+        padding-bottom:5px;
+        /*Imagenes*/    
+        .image{
+            width: 100%;
         }
-        /* Caja precio Descuento*/
-        .price-discount {
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            /* Precio */
-            strong{
-                font-size: 18px;
-                font-weight: 500;
-            }
-            /* Descuento */
-            span{
+        /* Descripcion de producto */
+        .product-description{
+            background-color: white;
+            padding: 10px 15px;
+            border-top: 1px solid #ebebeb;
+            position: relative;
+            /* icono de camion */
+            i {
+                background-color: white;
                 color:#39b54a;
+                border: 1px solid#39b54a;
+                border-radius: 50px;
+                padding: 5px;
+                position: absolute;
+                top: -15px; 
+                right: 20px;
+            }
+            /* Caja precio Descuento*/
+            .price-discount {
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content:flex-start;
+                /* Precio */
+                strong{
+                    width: 30%;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                /* Descuento */
+                span{
+                    width: 70%;
+                    color:#39b54a;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            /* Descripcion del producto */
+            h3{
                 font-size: 16px;
-                font-weight: 600;
+                font-weight: 400;
+                padding:10px 0 6px;
             }
         }
-        /* Descripcion del producto */
-        h3{
-            font-size: 16px;
-            font-weight: 400;
-        }
     }
-} 
+}
 /* TAble*/
 @media(min-width:768px){
     .products{
+        margin: 10%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .recuadroTitulares{
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
 /*Desktop*/
 @media (min-width:1024px){
     .products{
+        margin: 10%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .price-discount{
+        strong{
+            padding: 0 10px 0 0;
+        }
+        span{
+            padding: 0 0 0 10px;
+        }
+    }
+    .recuadroTitulares{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
     }
 }
