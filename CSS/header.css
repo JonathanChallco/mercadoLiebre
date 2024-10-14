@@ -31,6 +31,18 @@ header{
         justify-content: center;
         input{
             width: 100%;
+            padding: 10px;
+            border: 1px solid white;
+            border-top-left-radius:5px;
+            border-bottom-left-radius: 5px;
+        }
+        button {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid white;
+            /* border-radius: 4px; */
+            border-bottom-right-radius:4px;
+            border-top-right-radius:4px;
         }
     }
 }
@@ -38,7 +50,8 @@ header{
 /* Credito y cuotas */
 .credit{
     text-align: center;
-    font-weight: 400px;
+    font-size: 14px;
+    font-weight: 300px;
     padding: 10px 10px 10px 10px;
 }
 /* secciones de nap-var */
@@ -51,6 +64,13 @@ header{
         padding-top: 10px;
         padding-bottom: 10px;
         /* Ul1 y ul2 */
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+            }
+        }
     }
     /* caja de Burger */
     .caja-burger{
