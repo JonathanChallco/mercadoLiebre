@@ -93,7 +93,25 @@ main{
 @media (min-width:1024px){
     .products{
         margin: 10%;
+        box-shadow:none;
+        .product-description{
+            h3{
+                visibility: collapse;
+            }
+        }
+    }
+    /* movimiento */
+    .products:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        .product-description{
+            i {
+                transform: rotate(-90deg);
+            }
+            h3{
+                visibility: visible;
+            }
+
+        }
     }
     .price-discount{
         strong{
